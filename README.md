@@ -142,7 +142,7 @@ Now when you submit this form from any location, the data will be saved in the G
 
 <img src="https://sheetmonkey.io/img/guides/10-working-form.gif" width="450" />
 
-_Note: If you want to intercept the submit event so the user isn't redirected to the webapp, you can do this by attaching a JavaScript event listener to the form submission and creating the `POST` request yourself._
+_Note: If you want to intercept the submit event so the user isn't redirected to the webapp, [you can do this by attaching a JavaScript event listener to the form submission and creating the `POST` request yourself](https://codepen.io/levinunnink-the-bashful/pen/YzxPyoG?editors=0010)._
 
 ## Issues? 
 
