@@ -31,7 +31,7 @@ Replace the `myFunction() { ...` section with the following code snippet:
 const sheetName = 'Sheet1'
 const scriptProp = PropertiesService.getScriptProperties()
 
-function intialSetup () {
+function initialSetup () {
   const activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
   scriptProp.setProperty('key', activeSpreadsheet.getId())
 }
