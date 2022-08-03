@@ -16,9 +16,9 @@ This example shows how to set up a mailing list form that sends data to Google S
 
 ### 2. Create a Google App Script
 
-<img src="https://sheetmonkey.io/img/guides/1-app-script.gif" width="450" />
+<img src="https://sheetmonkey.io/img/guides/1-app-script.gif?ts=1" width="450" />
 
-Click on `Tools -> Script editor`. This will open new Google Script. Rename it to something like _"Mailing List"_.
+Click on `Extensions -> Apps Script`. This will open new Google Script. Rename it to something like _"Mailing List"_.
 
 <img src="https://sheetmonkey.io/img/guides/2-script-editor.png" width="450" />
 
