@@ -18,7 +18,7 @@ This example shows how to set up a mailing list form that sends data to Google S
 
 <img src="https://smmallcdn.net/levi/1712349215769/68747470733a2f2f73686565746d6f6e6b65792e696f2f696d672f6775696465732f312d6170702d7363726970742e6769663f74733d31.gif?ts=1" width="450" />
 
-Click on `Extensions -> Apps Script`. This will open new Google Script. Rename it to something like _"Mailing List"_.
+Click on `Extensions -> Apps Script`. In the left sidebar, open Code.gs. This will open new Google Script. Rename it to something like _"Mailing List"_.
 
 <img src="https://sheetmonkey.io/img/guides/2-script-editor.png" width="450" />
 
@@ -88,42 +88,19 @@ After giving the script the correct permissions, you should see the following ou
 
 Now your script has the correct permissions to continue to the next step.
 
-### 4. Add a trigger for the script
+### 4. Deploy as a Web App (2026 Apps Script editor)
 
-<img src="https://sheetmonkey.io/img/guides/7-triggers.png" width="450" />
+1. In the Apps Script editor (top right), click **Deploy → New deployment**.
+2. Next to **Select type**, click **Enable deployment types settings**, then choose **Web app**.
+3. Configure:
+   - **Execute as:** Me
+   - **Who has access:** Anyone
+4. Click **Deploy**.
+5. Copy the Web app URL (the `/exec` URL) and use it as your form `action`.
 
-Select the project "Triggers" from the sidebar and then click the `Add Trigger` button.
+Tip: For quick iteration, use **Deploy → Test deployments** to get a `/dev` URL while testing.
 
-In the window that appears, select the following options:
-
-- Choose which function to run: `doPost`
-- Choose which deployment should run: `Head`
-- Select event source: `From spreadsheet`
-- Select event type: `On form submit`
-
-<img src="https://sheetmonkey.io/img/guides/8-trigger-config.png" width="450" />
-
-Then select "Save".
-
-### 5. Publish the project
-
-Now your project is ready to publish. Select the `Deploy` button and `New Deployment` from the drop-down.
-
-<img src="https://smmallcdn.net/levi/1712349308531/9-deploy.gif" width="450" />
-
-Click the "Select type" icon and select `Web app`. 
-
-In the form that appears, select the following options:
-
-- Description: `Mailing List Form` (This can be anything that you want. Just make it descriptive.)
-- Web app → Execute As: `Me`
-- Web app → Who has access: `Anyone`
-
-Then click `Deploy`.
-
-**Important:** Copy and save the web app URL before moving on to the next step.
-
-### 6. Configure your HTML form
+### 5. Configure your HTML form
 
 Create a HTML form like the following, replacing `YOUR_WEBAPP_URL` with the URL you saved from the previous step.
 
