@@ -88,7 +88,7 @@ After giving the script the correct permissions, you should see the following ou
 
 Now your script has the correct permissions to continue to the next step.
 
-### 4. Deploy as a Web App (2026 Apps Script editor)
+### 4. Deploy as a Web App
 
 1. In the Apps Script editor (top right), click **Deploy → New deployment**.
 2. Next to **Select type**, click **Enable deployment types settings**, then choose **Web app**.
